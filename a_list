@@ -1,0 +1,6 @@
+outdoor_acts = ['going on a walk', 'going on a solo date', 'read a book', 'go get food'] #put all solo outdoor activities 
+
+indoor_acts = ['paint', 'self care day', 'read a book', 'watch a movie', 'bake desserts', 'cook new foods'] #put all solo indoor activities 
+ 
+  
+collab_acts = ['having a picnic','scavanger hunt', 'camping', 'playing games', 'road trips']  #put all activities that can be done with others(family/friends)
