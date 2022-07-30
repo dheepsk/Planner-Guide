@@ -1,0 +1,25 @@
+from a_list import outdoor_acts, indoor_acts, collab_acts
+
+decision = input("Do you want to do something alone or with others? ")
+take_away = input("\nTake out an activity from one of these lists to ensure you don't get overwhelmed by the plethora of options!(Only remove one to keep the rest of the fun!) \n\n" + str(outdoor_acts) + "\n\n" + str(indoor_acts) + "\n\n" + str(collab_acts) + "\n\n")
+
+for o in outdoor_acts:
+  if take_away == o:
+    outdoor_acts.remove(o)
+    
+for i in indoor_acts:
+  if take_away == i:
+    indoor_acts.remove(i)
+    
+for c in collab_acts:
+  if take_away == c:
+    collab_acts.remove(c)
+    
+if decision == "alone":
+    me_time = input("Do you want to do something indoor or outdoor? ")
+    if me_time == "indoor":
+      print("\nRelax indoors by yourself with one of these activities.:\n" + str(indoor_acts))
+    else:
+      print("\nRelax outdoors by yourself with one of these activities!:\n" + str(outdoor_acts))  
+else:
+  print("\nSpend some time with your loved ones with one of these activities!!:\n" + str(collab_acts))
